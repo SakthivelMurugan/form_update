@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>html</title>
+	</head>
+	<body>
+		<h1>welcome to fabevy technologies</h1>
+		<form action="#" method="POST">
+			<input id="title" type="text" name="name" placeholder="enter name">
+			<br>
+			<input id="content" type="text" name="mobile" placeholder="enter mobile number">
+			<br>
+			<input id="name" type="text" name="about" placeholder="about ur self">
+			<br>
+			<input type="submit" value="submit">
+		</form>
+        {{data}}
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>About</th>
+            </tr>
+            {%for i in data%}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.mobile}}</td>
+                <td>{{i.about}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+	</body>
+</html>
